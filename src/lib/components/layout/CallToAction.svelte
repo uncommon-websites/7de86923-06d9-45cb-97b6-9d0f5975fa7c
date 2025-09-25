@@ -40,6 +40,10 @@
 	import Button from "../ui/Button.svelte";
 	import AnimateText from "../animation/AnimateText.svelte";
 	import { cta } from "$lib/navigation";
+	
+	// Icons
+	import IconArrowRight from "~icons/lucide/arrow-right";
+	import IconBookOpen from "~icons/lucide/book-open";
 
 	// Types
 	type CTA = {
@@ -69,30 +73,36 @@
 <div class="" {...rest}>
 	<section class="section-px section-py container mx-auto">
 		<div
-			class="bg-card border-border grid content-start items-center justify-between gap-(--gap) rounded-(--radius) border p-(--gap) text-balance [--gap:--spacing(8)] [--inner-radius:calc(var(--radius)-var(--gap))] [--radius:var(--radius-xl)] lg:grid-cols-[2fr_1fr]"
+			class="bg-card border-border grid content-start items-center justify-between gap-(--gap) rounded-(--radius) border p-(--gap) text-balance transition-all duration-500 hover:scale-[1.01] [--gap:--spacing(8)] [--inner-radius:calc(var(--radius)-var(--gap))] [--radius:var(--radius-xl)] lg:grid-cols-[2fr_1fr]"
 		>
 			<div class="items-between grid h-full content-between gap-16">
 				<h2 class="text-title1 mb-3 flex flex-col">
-					<span><AnimateText text={title} /></span>
-					<span class="text-emphasis-low"><AnimateText text={subtitle} /></span>
+					<span class="transition-colors duration-300"><AnimateText text={title} /></span>
+					<span class="text-emphasis-low transition-colors duration-300"><AnimateText text={subtitle} /></span>
 				</h2>
 				<div class="flex flex-col items-start justify-start gap-7">
-					<p class="text-headline text-emphasis-low">
+					<p class="text-headline text-emphasis-low leading-relaxed">
 						{description}
 					</p>
-					<div class="flex w-full flex-col gap-2 md:flex-row md:flex-wrap">
-						{#each callsToAction as cta}
-							<Button class="w-full md:w-auto" href={cta.href} variant={cta.variant || "primary"}
-								>{cta.label}</Button
+					<div class="flex w-full flex-col gap-3 md:flex-row md:flex-wrap">
+						{#each callsToAction as cta, index}
+							<Button 
+								class="w-full transform transition-all duration-300 hover:scale-105 md:w-auto" 
+								href={cta.href} 
+								variant={cta.variant || "primary"}
+								size="lg"
+								suffix={index === 0 ? IconArrowRight : index === 1 ? IconBookOpen : undefined}
 							>
+								{cta.label}
+							</Button>
 						{/each}
 					</div>
 				</div>
 			</div>
 			<img
 				src={imageSrc}
-				alt="Visual comparison showing product benefits"
-				class="hidden aspect-[4/5] size-full max-h-full w-full rounded-[calc(max(var(--inner-radius),.25rem))] object-cover lg:block"
+				alt="Successful academic researcher in modern office celebrating breakthrough discovery with raised hands, showing the satisfaction and joy of efficient research"
+				class="hidden aspect-[4/5] size-full max-h-full w-full rounded-[calc(max(var(--inner-radius),.25rem))] object-cover transition-transform duration-500 hover:scale-105 lg:block"
 			/>
 		</div>
 	</section>

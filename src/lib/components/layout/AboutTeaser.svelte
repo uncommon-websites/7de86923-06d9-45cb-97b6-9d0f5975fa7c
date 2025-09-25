@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
+		name: "Veronica Chambers",
 		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		image: "/generated/image-a-professional-woman-founder-stands-conf.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I spent countless nights buried in research papers, losing hours to fragmented information. That frustration sparked something bigger—what if we could make the world's knowledge truly accessible? There's so much more to this story."`}
 			/>
 
 			<!-- Team Member & CTA Section -->

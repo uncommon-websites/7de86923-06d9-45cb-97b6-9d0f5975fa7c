@@ -83,5 +83,22 @@
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+	title="Read research faster"
+	subtitle="Stop searching. Start connecting."
+	description="Spend less time looking and more time learning. See how one paper leads to another with visual maps that reveal relationships behind research, helping you trace ideas, spot trends, and find what others miss. Try Surf arXiv free today and go from confusion to clarity in seconds."
+	imageSrc="/generated/image-a-joyful-academic-researcher-in-a-contem.webp"
+	callsToAction={[
+		{
+			href: "/",
+			label: "Try it free",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn more",
+			variant: "secondary"
+		}
+	]}
+/>
