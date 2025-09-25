@@ -21,7 +21,7 @@
 			<img
 				class="h-full w-full object-cover"
 				src={imageSrc}
-				alt="Diverse group of people collaborating"
+				alt="Researchers collaborating in modern academic workspace"
 			/>
 		</div>
 	</div>

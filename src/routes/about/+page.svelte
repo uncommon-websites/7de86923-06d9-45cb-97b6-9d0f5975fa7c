@@ -26,10 +26,9 @@
 </script>
 
 <SecondaryHero
-	generating
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
+	title="Think faster than you read"
+	subtitle="The research browser built for breakthroughs"
+	imageSrc="/generated/image-a-group-of-diverse-researchers-collabora.webp"
 />
 
 <!-- Story Section -->
