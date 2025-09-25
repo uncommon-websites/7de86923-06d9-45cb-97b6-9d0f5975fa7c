@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Navigate research papers with unprecedented speed and clarity"
+	subtitle="Transform how you discover, understand, and connect academic knowledge with AI-powered graph databases that make complex research accessible."
+	imageSrc="/generated/image-a-focused-academic-researcher-sits-at-a-.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/openai.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/anthropic.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/huggingface.co/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/deepmind.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
